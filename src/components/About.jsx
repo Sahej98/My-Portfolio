@@ -3,7 +3,7 @@ import image from '../assets/hero-pfp.jpg';
 export default function About() {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/resume.pdf`;
+    link.href = `/resume.pdf`;
     link.download = 'Prabhjot_Singh_Resume.pdf';
     document.body.appendChild(link);
     link.click();

@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/resume.pdf`;
+    link.href = `/resume.pdf`;
     link.download = 'Prabhjot_Singh_Resume.pdf';
     document.body.appendChild(link);
     link.click();
