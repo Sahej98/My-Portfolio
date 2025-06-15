@@ -1,6 +1,15 @@
 import image from '../assets/hero-pfp.jpg';
 
 export default function About() {
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '../assets/Resume.pdf';
+    link.download = 'Prabhjot_Singh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className='about-cont'>
       <div className='about-text'>
@@ -21,7 +30,7 @@ export default function About() {
         </p>
 
         <div className='about-buttons'>
-          <button>Resume</button>
+          <button onClick={handleResumeDownload}>Resume</button>
         </div>
       </div>
 

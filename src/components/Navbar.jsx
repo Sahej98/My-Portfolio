@@ -10,6 +10,15 @@ export default function Navbar() {
     document.body.classList = darkMode ? 'dark' : '';
   }, [darkMode]);
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '../assets/Resume.pdf';
+    link.download = 'Prabhjot_Singh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className='header'>
       <div className='logo'>
@@ -36,7 +45,7 @@ export default function Navbar() {
       </ul>
 
       <div className='social'>
-        <button>Download Resume</button>
+        <button onClick={handleResumeDownload}>Download Resume</button>
         <a href='https://linkedin.com' target='_blank' rel='noreferrer'>
           <Linkedin />
         </a>
