@@ -1,5 +1,5 @@
-import portfolioImg from '../assets/Project1.jpg';
-import taskImg from '../assets/Project2.jpg';
+import portfolioImg from '../assets/project1.jpg';
+import taskImg from '../assets/project2.jpg';
 import weatherImg from '../assets/hero-pfp.jpg';
 
 export default function Projects() {
@@ -25,8 +25,8 @@ export default function Projects() {
         'A desktop-based Java application that allows users to launch, manage, and update their games from one unified interface.',
       tech: ['Java'],
     },
-  ];  
-  
+  ];
+
   return (
     <section className='projects-section'>
       <h1>My Projects</h1>
